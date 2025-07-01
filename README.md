@@ -41,4 +41,6 @@ Projeyi derlemek için terminalde aşağıdaki komutu kullanın:
 g++ main.cpp paket_yakalayici.cpp trafik_analiz.cpp gunluk_kayit.cpp yardimci.cpp -lpcap -o ids
 
 Programı çalıştırmak için terminalde aşağıdaki komutu kullanın.
+
+```bash
 sudo ./ids
