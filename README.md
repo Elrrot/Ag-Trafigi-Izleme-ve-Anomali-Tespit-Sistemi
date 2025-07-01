@@ -30,3 +30,14 @@ Bu proje, C++ ve libpcap kütüphanesi kullanılarak geliştirilmiş gerçek zam
 ```bash
 sudo apt update
 sudo apt install build-essential libpcap-dev
+
+## Programın Çalıştırılması
+
+### 1. Derleme
+
+Projeyi derlemek için terminalde aşağıdaki komutu kullanın:
+
+```bash
+g++ main.cpp paket_yakalayici.cpp trafik_analiz.cpp gunluk_kayit.cpp yardimci.cpp -lpcap -o ids
+
+sudo ./ids
