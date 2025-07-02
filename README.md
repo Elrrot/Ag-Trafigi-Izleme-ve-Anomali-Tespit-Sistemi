@@ -25,22 +25,15 @@ Bu proje, C++ ve libpcap kütüphanesi kullanılarak geliştirilmiş gerçek zam
 - libpcap ve geliştirme paketleri (`libpcap-dev`)
 - Root yetkisi (paket yakalamak için)
 
-### Paketlerin Kurulumu (Debian/Ubuntu)
-
+### Paketlerin Kurulumu ve Programı Çalıştırma(Debian/Ubuntu)
 ```bash
-sudo apt update
-sudo apt install build-essential libpcap-dev
+  sudo apt update
+  sudo apt install build-essential libpcap-dev
 
-## Programın Çalıştırılması
+  git clone https://github.com/Elrrot/Ag-Trafigi-Izleme-ve-Anomali-Tespit-Sistemi.git
+  cd Ag-Trafigi-Izleme-ve-Anomali-Tespit-Sistemi
+  cd IDS_PROJECT_CPP
+  sudo make
+  sudo ./ids  
 
-### 1. Derleme
 
-Projeyi derlemek için terminalde aşağıdaki komutu kullanın:
-
-```bash
-g++ main.cpp paket_yakalayici.cpp trafik_analiz.cpp gunluk_kayit.cpp yardimci.cpp -lpcap -o ids
-
-Programı çalıştırmak için terminalde aşağıdaki komutu kullanın.
-
-```bash
-sudo ./ids
