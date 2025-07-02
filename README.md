@@ -14,7 +14,7 @@ Bu proje, C++ ve libpcap kütüphanesi kullanılarak geliştirilmiş gerçek zam
 - Aynı anomali için uyarıların belirli aralıklarla gösterilmesi (örneğin 10 saniye)
 - Anomali yapan cihazın IP ve MAC adresinin ekranda gösterilmesi
 - Minimum çıktı ile gereksiz bilgi yükünün önlenmesi
-- Log dosyasına anomali kayıtlarının tutulması (opsiyonel)
+- Log dosyasına anomali kayıtlarının tutulması
 
 ---
 
@@ -25,15 +25,18 @@ Bu proje, C++ ve libpcap kütüphanesi kullanılarak geliştirilmiş gerçek zam
 - libpcap ve geliştirme paketleri (`libpcap-dev`)
 - Root yetkisi (paket yakalamak için)
 
-### Paketlerin Kurulumu ve Programı Çalıştırma(Debian/Ubuntu)
+### Paketlerin Kurulumu(Debian/Ubuntu)
 ```bash
   sudo apt update
   sudo apt install build-essential libpcap-dev
 
   git clone https://github.com/Elrrot/Ag-Trafigi-Izleme-ve-Anomali-Tespit-Sistemi.git
-  cd Ag-Trafigi-Izleme-ve-Anomali-Tespit-Sistemi
-  cd IDS_PROJECT_CPP
-  sudo make
-  sudo ./ids  
+```
+### Programı Derleme ve Çalıştırma
+```bash
+  cd Ag-Trafigi-Izleme-ve-Anomali-Tespit-Sistemi #proje klasörüne geçiş
+  cd IDS_PROJECT_CPP  #projenin ana klasörüne geçiş
+  sudo make   #programı derleme komutu
+  sudo ./ids  #programı çalıştırma komutu 
 
 
