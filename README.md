@@ -19,7 +19,6 @@ Bu proje, C++ ve libpcap kütüphanesi kullanılarak geliştirilmiş gerçek zam
 
 
 ## PROJE KAYNAK DOSYALARI AÇIKLAMALARI
-────────────────────────────────────
 🔹 main.cpp
 // Ana dosya. Programın başlangıç noktasıdır.
 // Ağ arayüzünü belirler, paket dinlemeyi başlatır ve programın genel kontrolünü sağlar.
@@ -37,7 +36,7 @@ Bu proje, C++ ve libpcap kütüphanesi kullanılarak geliştirilmiş gerçek zam
 🔹 yardimci.cpp
 // Zaman kontrolü, string işlemleri gibi yardımcı işlevlerin tanımlandığı modüldür.
 
-────────────────────────────────────
+
 🔸 paket_yakalayici.h
 // paket_yakalayici.cpp dosyasındaki fonksiyonların prototiplerini içerir.
 // pcap ile ilgili tanımlar burada yapılır.
@@ -51,12 +50,11 @@ Bu proje, C++ ve libpcap kütüphanesi kullanılarak geliştirilmiş gerçek zam
 🔸 yardimci.h
 // Ortak kullanılan yardımcı fonksiyonların prototiplerini içerir.
 
-────────────────────────────────────
 📝 Açıklama:
 - Tüm .cpp dosyaları ilgili .h dosyalarıyla birlikte çalışır.
 - Program modüler bir yapıya sahiptir.
 - Kodlar C++ dilinde yazılmıştır ve libpcap kütüphanesi kullanılmıştır.
----
+
 
 ## Gereksinimler
 
