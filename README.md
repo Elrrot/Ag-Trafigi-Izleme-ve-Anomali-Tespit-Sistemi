@@ -50,6 +50,11 @@ Bu proje, C++ ve libpcap kütüphanesi kullanılarak geliştirilmiş gerçek zam
 🔸 yardimci.h
 // Ortak kullanılan yardımcı fonksiyonların prototiplerini içerir.
 
+🔸 Makefile
+// Projeyi kolayca derlemek için kullanılan yapılandırma dosyasıdır.
+// `make` komutu ile tüm kaynak dosyaları derlenir ve 'ids' adlı çalıştırılabilir dosya oluşturulur.
+// `make clean` komutu ile derleme sonucu oluşan dosya silinir.
+
 📝 Açıklama:
 - Tüm .cpp dosyaları ilgili .h dosyalarıyla birlikte çalışır.
 - Program modüler bir yapıya sahiptir.
@@ -57,11 +62,11 @@ Bu proje, C++ ve libpcap kütüphanesi kullanılarak geliştirilmiş gerçek zam
 
 
 ## Gereksinimler
-
 - Linux tabanlı işletim sistemi (Kali Linux, Ubuntu,Parrot OS)
 - GCC / G++ derleyicisi
 - libpcap ve geliştirme paketleri (`libpcap-dev`)
 - Root yetkisi (paket yakalamak için)
+  
 
 ## Paketlerin Kurulumu(Debian/Ubuntu)
 ```bash
@@ -70,6 +75,7 @@ Bu proje, C++ ve libpcap kütüphanesi kullanılarak geliştirilmiş gerçek zam
 
   git clone https://github.com/Elrrot/Ag-Trafigi-Izleme-ve-Anomali-Tespit-Sistemi.git
 ```
+
 ## Programı Derleme ve Çalıştırma
 ```bash
   cd Ag-Trafigi-Izleme-ve-Anomali-Tespit-Sistemi #proje klasörüne geçiş
